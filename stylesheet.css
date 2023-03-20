@@ -1,0 +1,70 @@
+#container {
+  max-width: 700px;
+  margin: auto;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: stretch;
+}
+
+#nav {
+  display: inline-block;
+  padding: 0px;
+}
+
+#nav li {
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+  padding-top: 0px;
+}
+
+.goudy {
+/*	font-family: "Goudy Old Style";*/
+	/*font-family: 'Sorts Mill Goudy', serif;*/
+	font-family: 'Goudy Old Style', serif;
+	/*margin-bottom: 60px;*/
+}
+
+p {
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 18px;
+}
+
+.paper {
+  font-weight: bold;
+	font-family: 'Goudy Old Style', serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.paper_details {
+	font-family: 'Goudy Old Style', serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.tags a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.tags a:hover {
+  text-decoration: underline;
+}
+
+#paper_list > li {
+  margin-bottom: 20px;
+}
+
+img {
+  display: inline-block;
+  width: 30%;
+  float: left;
+  margin-right: 20px;
+}
