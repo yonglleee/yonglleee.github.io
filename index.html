@@ -1,8 +1,169 @@
-<p>Hello 大家好</p>
-<p>我是霸都丶傲天，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<html>
+<head>
+  <title>Evan Z. Liu</title>
+  <link rel="stylesheet" href="stylesheet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h2 id="me" class="goudy">
+        <div>Evan Z. Liu</div>
+        <div style="font-size: 18; font-weight: normal">
+          Stanford CS PhD Candidate
+        </div>
+      </h2>
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
+      <ul id="nav" class="goudy">
+        <!--<li>
+          <a href="#about" class="button">About</a>
+        </li>
+        <li>
+          <a href="#publications" class="button">Publications</a>
+        </li>
+        <li>
+          <a href="#contact" class="button">Contact</a>
+        </li>-->
+        <li>
+          <a href="https://scholar.google.com/citations?user=qjDVoqQAAAAJ&hl=en" class="button">Google Scholar</a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/document/d/11WM0AuetYa3FZWyzS4UXTTWSidAuT--mKZFpUenK84M/edit?usp=sharing" class="button">Resume</a>
+        </li>
+        <li>
+          <a href="https://github.com/ezliu" class="button">GitHub</a>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div id="about">
+      <img src="images/evan_castle.jpg" style="width:180px; height:auto; padding-top:5px">
+      <p>
+        Hi! I'm a fourth and final year PhD student at Stanford University, advised by
+        <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>.
+        My research is supported by a
+        <a href="https://www.nsfgrfp.org/">NSF Graduate Research Fellowship</a>.
+      </p>
+
+      <p>
+        My goal is to build practical agents that can quickly solve new tasks
+        by leveraging prior experience on related tasks.
+        Toward this end, my research focuses on meta-reinforcement learning.
+      </p>
+
+      <p>
+        I spend most of my free time trying not to pull too hard on plastic or real rock (rock climbing).
+      </p>
+
+      <center><p><i>
+        I'm looking for a job for when I graduate in June!
+        I'm a researcher by training and an engineer at heart, and I'm open to both roles.
+        I want to build systems that help people and develop beautiful,
+        well-documented, modular code along the way!
+      </i></p></center>
+    </div>
+
+    <hr>
+
+    <div id="publications" class="goudy">
+      <h2 class="goudy">Selected Publications (<a href="https://scholar.google.com/citations?user=qjDVoqQAAAAJ&hl=en">See all</a>)</h2>
+      <ul id="paper_list">
+        <li>
+          <div class="paper">
+            Giving Feedback on Interactive Programs with Meta-Exploration
+          </div>
+          <div class="paper_details">
+            <b>Evan Zheran Liu</b>*, <a href="https://www.linkedin.com/in/moritz-stephan/">Moritz Stephan</a>*, <a href="https://anie.me/about">Allen Nie</a>, <a href="https://cs.stanford.edu/people/ebrun/">Emma Brunskill</a>, <a href="https://stanford.edu/~cpiech/bio/index.html">Chris Piech</a>, <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>
+            <br>
+            <i>Neural Information Processing Systems (NeurIPS), 2022</i> <b style="color:red">(oral)</b>
+            <div class="tags">
+              <a href="https://arxiv.org/abs/2211.08802">[paper]</a>
+              <a href="https://youtu.be/ZzJI7O3IzyY">[talk]</a>
+              <a href="https://docs.google.com/presentation/d/1GL5ftjTT36f36vs4ke5v67Gg8EFvBAowM2_2r-E3pYQ/edit?usp=sharing">[poster]</a>
+              <a href="https://github.com/ezliu/dreamgrader">[code]</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="paper">
+            Decoupling Exploration and Exploitation in Meta-Reinforcement Learning without Sacrifices
+          </div>
+          <div class="paper_details">
+            <b>Evan Zheran Liu</b>, <a href="https://stanford.edu/~aditir/">Aditi Raghunathan</a>, <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>, <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>
+            <br>
+            <i>International Conference on Machine Learning (ICML), 2021</i>
+            <div class="tags">
+              <a href="https://arxiv.org/abs/2008.02790">[paper]</a>
+              <a href="https://youtu.be/ZzJI7O3IzyY">[short talk]</a>
+              <a href="https://ezliu.github.io/dream">[website]</a>
+              <a href="https://docs.google.com/presentation/d/1EsDzcnYghgBNIxGCMbxEdYo6nusgUVC7DpDsusMUshE/edit?usp=sharing">[poster]</a>
+              <a href="https://ai.stanford.edu/blog/meta-exploration/">[blog post]</a>
+              <a href="https://github.com/ezliu/dream">[code]</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="paper">
+            An Imitation Learning Approach for Cache Replacement
+          </div>
+          <div class="paper_details">
+            <b>Evan Zheran Liu</b>, <a href="https://research.google/people/MiladHashemi/">Milad Hashemi</a>, <a href="https://research.google/people/105739/">Kevin Swersky</a>, <a href="https://research.google/people/ParthasarathyRanganathan/">Parthasarathy Ranganathan</a>, <a href="https://research.google/people/JunwhanAhn/">Junwhan Ahn</a>
+            <br>
+            <i>International Conference on Machine Learning (ICML), 2020</i>
+            <br>
+            <div class="tags">
+              <a href="https://arxiv.org/abs/2006.16239">[paper]</a>
+              <a href="https://slideslive.com/38927774/an-imitation-learning-approach-for-cache-replacement?ref=speaker-30811-latest">[talk]</a>
+              <a href="https://github.com/google-research/google-research/tree/master/cache_replacement">[code]</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="paper">
+            Learning Options via Compression
+          </div>
+          <div class="paper_details">
+            <a href="https://yidingjiang.github.io/">Yiding Jiang</a>*, <b>Evan Zheran Liu</b>*, <a href="https://ben-eysenbach.github.io/">Benjamin Eysenbach</a>, <a href="https://zicokolter.com/">Zico Kolter</a>, <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>
+            <br>
+            <i>Neural Information Processing Systems (NeurIPS), 2022</i>
+            <div class="tags">
+              <a href="https://arxiv.org/abs/2212.04590">[paper]</a>
+              <a href="https://github.com/yidingjiang/love">[code]</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="paper">
+            Just Train Twice: Improving Group Robustness without Training Group Information
+          </div>
+          <div class="paper_details">
+            <b>Evan Zheran Liu</b>*, <a href="https://www.linkedin.com/in/behzadhaghgoo/">Behzad Haghgoo</a>*, <a href="https://anniesch.github.io/">Annie S. Chen</a>*, <a href="https://stanford.edu/~aditir/">Aditi Raghunathan</a>, <a href="http://koh.pw/">Pang Wei Koh</a>, <a href="https://cs.stanford.edu/~ssagawa/">Shiori Sagawa</a>, <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>, <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>
+            <br>
+            <i>International Conference on Machine Learning (ICML), 2021</i> <b style="color:red">(long talk)</b>
+            <div class="tags">
+              <a href="https://arxiv.org/abs/2107.09044">[paper]</a>
+              <a href="https://docs.google.com/presentation/d/1PHagQipn9qBd99rvhsVZkbXcBPOsPQy0lSh5OoayJp4/edit?usp=sharing">[poster]</a>
+              <a href="https://github.com/anniesch/jtt">[code]</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div id="contact">
+      <h2 class="goudy">Contact</h2>
+      <p>You can reach me at [my first name][my last name]@cs.stanford.edu</p>
+      <p>Last updated: <b>January 21, 2022</b> </p>
+    </div>
+  </div>
+</body>
+</html>
