@@ -30,6 +30,14 @@
 	font-family: 'Goudy Old Style', serif;
 	/*margin-bottom: 60px;*/
 }
+.button {
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+  font-weight: 550;
+}
+.button:hover {
+  text-decoration: underline;
+}
 
 p {
   font-family: 'Sorts Mill Goudy', serif;
