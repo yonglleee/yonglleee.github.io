@@ -1,0 +1,45 @@
+---
+# 这是对 gem（al_folio_core）里 assets/css/main.scss 的**本地覆盖**。
+# 站点文件优先于 theme gem 的同名文件，所以这份会生效。
+#
+# 唯一有意义的改动：把亮色模式的强调色从 $purple-color(#b509ac 品红紫)
+# 换成 $blue-color(#0076df)。其余行与 gem 保持逐字一致。
+#
+# ⚠️ 覆盖是"整文件替换"：gem 以后若改了 main.scss（比如新增 partial），
+#    这里不会自动跟进。用下面这条命令可以检测漂移：
+#      bundle exec al-folio upgrade overrides audit
+#    新增的 @use 需要手动同步进来。
+---
+
+@charset "utf-8";
+
+/* Built-in Sass modules */
+@use "sass:math";
+@use "sass:string";
+
+/* 设计令牌：必须在加载任何 partial 之前配置。
+   $purple-color 在 gem 的 _sass/_variables.scss 里声明为 `!default`，因此可在此配置。
+   _themes.scss 用它填 --global-theme-color / --global-hover-color，
+   $code-bg-color-light 也从它派生（代码块底色会跟着变成淡蓝）。 */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default: "930px" }},
+  $purple-color: #0076df
+);
+
+/* Theme partials */
+@use "themes";
+@use "layout";
+
+/* Core styles organized by usage */
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+/* Other specialized styles */
+@use "tabs";
+@use "teachings";
+@use "typograms";

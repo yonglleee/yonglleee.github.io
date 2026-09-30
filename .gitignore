@@ -1,0 +1,32 @@
+_site
+.bundle
+.DS_store
+.idea
+.jekyll-cache
+.jekyll-metadata
+.ruby-version
+.sass-cache
+.tweet-cache
+.venv
+assets/libs/
+assets/rendercv/rendercv_output/*.typ
+al-folio-upgrade-report.md
+node_modules/
+output/playwright/
+test-results/
+vendor
+
+# Python bytecode from bin/ helper scripts
+__pycache__/
+*.pyc
+
+# VS Code Local History —— 编辑器自动存的历史快照，不是项目文件
+.history/
+
+# WorkBuddy 本地工作数据：本地预览配置、原图备份、工作笔记
+# 想同步给协作者的话，可以只放行笔记：!.workbuddy/memory/
+.workbuddy/
+
+# Windows 缩略图缓存
+Thumbs.db
+Desktop.ini

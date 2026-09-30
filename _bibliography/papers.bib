@@ -1,0 +1,170 @@
+% Add your BibTeX publication entries here.
+%
+% The home page renders EVERY entry in this file as ONE FLAT LIST, in the ORDER
+% OF THIS FILE — there is no year grouping any more (see the
+% {% bibliography --group_by none %} call at the bottom of _pages/about.md).
+% So: put the newest work at the top, and there is nothing else to configure.
+%
+% Why passing --group_by none is enough: jekyll-scholar only reorders entries
+% when `scholar.sort_by` is set, and it is not set here, so the file order is
+% preserved as written.
+%
+% selected = {true} is kept only as a "highlighted" marker; it does NOT affect
+% rendering right now. To go back to showing only the highlighted entries, swap
+% the {% bibliography --group_by none %} call in _pages/about.md for
+% {% include selected_papers.liquid %}.
+%
+% Do NOT wrap your own name in \textbf{} or \underline{}: the theme already detects it
+% from `scholar.first_name` / `scholar.last_name` in _config.yml and marks it itself.
+% LaTeX commands here are not converted, so they leak into the page as literal text.
+%
+% Optional fields, each one adds a button under the entry:
+%   preview = {file.png}       -> thumbnail, read from /assets/img/publication_preview/.
+%                                 A full https://... URL, or a video (.mp4/.webm/.ogg/.mov),
+%                                 also works.
+%   bibtex_show = {true}       -> "Bib" button, expands the raw BibTeX inline
+%   doi = {10.xxxx/yyyy}       -> "DOI" button
+%   arxiv = {2502.04638}       -> "arXiv" button
+%   html = {https://...}       -> "HTML" button (a bare path is resolved under /assets/html/)
+%   pdf = {https://...}        -> "PDF" button (a bare path is resolved under /assets/pdf/)
+%   code = {https://...}       -> "Code" button
+%   website = {https://...}    -> "Website" button
+%   video / poster / slides / supp / blog / hal  -> same pattern
+%   abstract = {...}           -> "Abs" button, expands the abstract inline
+%   award = {...}              -> award badge
+% A trailing marker on a surname ("Yeh, Christopher*") is rendered as a superscript,
+% which is the usual way to flag equal contribution. It does not affect self-detection.
+%
+% --- Adding a thumbnail -----------------------------------------------------
+% 1. Drop the image into assets/img/publication_preview/ (this is the only folder
+%    the theme looks in). Name it lowercase-with-hyphens, no spaces:
+%    my-paper.jpg, not "My Paper.JPG".
+% 2. Add one line to the entry:  preview={my-paper.jpg},
+% 3. Rebuild. No HTML, no CSS, no width attribute needed — the theme renders it in
+%    a fixed left column (col-sm-2) and it opens fullscreen on click.
+% Size: long edge around 800 px, file under ~100 KB. Everything in that folder was
+% normalized with .workbuddy/compress_previews.py (long edge 800 px, JPEG q85,
+% originals kept in .workbuddy/backup-*/preview-orig/) — re-run it after dropping
+% new images in.
+% Note: rendered height follows each image's aspect ratio (the theme has no
+% fixed-height CSS for .preview), so very different ratios look ragged.
+% Entries WITHOUT a preview are fine too: they just render the text full-width.
+
+% ---------------------------------------------------------------------------
+% 2026
+% ---------------------------------------------------------------------------
+
+@inproceedings{li2026reverse,
+  title={REVERSE: Reinforcing Evidence Verification and Search for Agentic Image geo-localization},
+  author={Li, Yong and Jia, Furong and Yin, Dacheng and Rong, Kang and Rao, Fengyun and Lyu, Jing and Zhang, Fan},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2026},
+  arxiv={2605.26861},
+  bibtex_show={true},
+  preview={reverse.jpg},
+  selected={true}
+}
+
+@inproceedings{zhang2026uni,
+  title={Uni-RS: A Spatially Faithful Unified Understanding and Generation Model for Remote Sensing},
+  author={Zhang, Weiyu and Hu, Yuan and Li, Yong and Liu, Yu},
+  booktitle={Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence},
+  year={2026},
+  arxiv={2601.17673},
+  bibtex_show={true},
+  preview={uni-rs.jpg},
+  selected={true}
+}
+
+@inproceedings{li2026unified,
+  title={Unified Urban Tuning: Co-Enhancing Satellite and Street View Reasoning with a Progressive Tuning Framework},
+  author={Li, Yong and Zhang, Weiyu and Dai, Ling and Yang, Jian and Yin, Dacheng and Li, Sirun and Lyu, Jing and Rao, Fengyun and Zhang, Fan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Findings},
+  pages={6302--6311},
+  year={2026},
+  html={https://openaccess.thecvf.com/content/CVPR2026F/html/Li_Unified_Urban_Tuning_Co-Enhancing_Satellite_and_Street_View_Reasoning_with_CVPRF_2026_paper.html},
+  code={https://github.com/yonglleee/uut},
+  bibtex_show={true},
+  preview={unified-urban-tuning.jpg},
+  selected={true}
+}
+
+@inproceedings{yang2026wemmu,
+  title={WeMMU: Enhanced Bridging of Vision-Language Models and Diffusion Models via Noisy Query Tokens},
+  author={Yang, Jian and Yin, Dacheng and He, Xiaoxuan and Li, Yong and Rao, Fengyun and Lyu, Jing and Zhai, Wei and Cao, Yang and Zha, Zheng-Jun},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={17609--17618},
+  year={2026},
+  html={https://openaccess.thecvf.com/content/CVPR2026/html/Yang_WeMMU_Enhanced_Bridging_of_Vision-Language_Models_and_Diffusion_Models_via_CVPR_2026_paper.html},
+  arxiv={2512.02536},
+  bibtex_show={true},
+  preview={wemmu.jpg},
+  selected={true}
+}
+
+@article{li2026learning,
+  title={Learning street view representations based on a spatiotemporal contrastive learning framework},
+  author={Li, Yong and Huang, Yingjing and Zhang, Fan},
+  journal={Computers, Environment and Urban Systems},
+  volume={125},
+  pages={102393},
+  year={2026},
+  publisher={Elsevier},
+  doi={10.1016/j.compenvurbsys.2025.102393},
+  code={https://github.com/yonglleee/UrbanSTCL},
+  bibtex_show={true},
+  preview={UrbanSTCL.jpg}
+}
+
+% ---------------------------------------------------------------------------
+% 2025
+% ---------------------------------------------------------------------------
+
+@article{li2025pan,
+  title={Pan-sharpening via Symmetric Multi-Scale Correction-Enhancement Transformers},
+  author={Li, Yong and Wang, Yi and Shi, Shuai and Wang, Jiaming and Wang, Ruiyang and Lu, Mengqian and Zhang, Fan},
+  journal={Neural Networks},
+  pages={107226},
+  year={2025},
+  publisher={Elsevier},
+  doi={10.1016/j.neunet.2025.107226},
+  code={https://github.com/yonglleee/SMCET},
+  bibtex_show={true},
+  preview={SMCET.jpg}
+}
+
+% ---------------------------------------------------------------------------
+% 2024
+% ---------------------------------------------------------------------------
+
+@article{zhang2024multi,
+  title={Multi-level urban street representation with street-view imagery and hybrid semantic graph},
+  author={Zhang, Yan and Li, Yong and Zhang, Fan},
+  journal={ISPRS Journal of Photogrammetry and Remote Sensing},
+  volume={218},
+  pages={19--32},
+  year={2024},
+  publisher={Elsevier},
+  doi={10.1016/j.isprsjprs.2024.09.032},
+  code={https://github.com/yemanzhongting/HybridGraph},
+  bibtex_show={true},
+  preview={HybridGraph.jpg}
+}
+
+% ---------------------------------------------------------------------------
+% 2022
+% ---------------------------------------------------------------------------
+
+@article{wang2022artifact,
+  title={From artifact removal to super-resolution},
+  author={Wang, Jiaming and Shao, Zhenfeng and Huang, Xiao and Lu, Tao and Zhang, Ruiqian and Li, Yong},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  volume={60},
+  pages={1--15},
+  year={2022},
+  publisher={IEEE},
+  doi={10.1109/TGRS.2022.3196709},
+  code={https://github.com/jiaming-wang/ARSRN},
+  bibtex_show={true},
+  preview={ARSRN.jpg}
+}
